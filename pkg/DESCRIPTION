@@ -9,5 +9,5 @@ Suggests: scatterplot3d (>= 0.3-22), som, mlbench, rpart, e1071
 Depends: R (>= 2.0.0), MASS
 Description: Miscellaneous functions for classification and visualization
          developed at the Department of Statistics, University of Dortmund
-License: GPL version 2
+License: GPL-2
 URL: http://www.statistik.uni-dortmund.de

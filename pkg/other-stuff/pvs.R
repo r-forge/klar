@@ -188,7 +188,7 @@ predict.pvs <- function(object, newdata, quick = FALSE, detail = FALSE, ...){
 #Advances in Neural Information Processing Systems,  volume 10. The MIT Press,  1998.
 #Author: Marcos Marin-Galiano,  Dept. Of Statistics,  University Of Dortmund,  Germany
 #        modified by Gero Szepannek
-#email: marcos.marin-galiano@uni-dortmund.de.
+#email: marcos.marin-galiano@tu-dortmund.de.
 #input: matr is the matrix of r_ij = p_i / (p_i + p_j). matr must have the same number of
 #rows and columns,  matnum is the matrix of the n_ij
 pfromp <- function(matr, tolerance=1.E-4, matnum=matrix(rep(1, dim(matr)[1]^2), nrow=dim(matr)[1]))

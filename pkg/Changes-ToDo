@@ -144,6 +144,11 @@ Changelog:
 - document several instances of "..." arguments that had empty argument descriptions
 - passing "..." to underlying print() functions for print.rda()
 
+==== release: 0.6-4
+
+- another fix for numerics in predict.NaiveBayes by Karsten Luebke
+
+
 
 
 To Do (at least in Uwe's opinion):

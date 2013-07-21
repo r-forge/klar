@@ -63,7 +63,7 @@ greedy.wilks.default <- function(X, grouping, niveau = 0.2, ...){
 
 
  gpVar <- deparse(substitute(grouping))
- if(ncol(grouping > 1)) 
+ if(!is.null(ncol(grouping)) && ncol(grouping) > 1) 
     stop("only one grouping variable supported")
  
  X        <- as.matrix(X)               # data matrix

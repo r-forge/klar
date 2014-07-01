@@ -171,6 +171,11 @@ Changelog:
 - move combinat from Suggests to Imports
 - remove require calls for MASS
 
+==== release: 0.6-11
+
+- GermanCredit data copied vom evtree package which has been archived
+- depends on R >= 2.10.0
+
 
 
 To Do (at least in Uwe's opinion):

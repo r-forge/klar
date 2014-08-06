@@ -1,11 +1,12 @@
 \name{cond.index}
+\alias{cond.index}
 
 \title{Calculation of Condition Indices for Linear Regression}
 \description{
 Diagnosis of collinearity in X
 }
 \usage{
-cond.index <- function(formula, data, ...)
+cond.index(formula, data, ...)
 }
 
 \arguments{

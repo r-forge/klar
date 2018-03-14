@@ -108,31 +108,31 @@ corclust <- function(x, cl = NULL, method = "complete"){
     }
 
 
- plot.corclust <- function(x, selection = "both",  mincor = NULL, ...){
+plot.corclust <- function(x, selection = "both",  mincor = NULL, ...){
 
-   if(is.null(x$cluster.numerics)) selection <- "factor"
-   if(is.null(x$cluster.factors)) selection <- "numeric"
-   if(selection == "both"){par(ask=TRUE)}
-   
-   if(selection == "both" | selection == "numeric"){
-   ylb <- "1 - absolute correlation within cluster"
-   if(x$cluster.numerics$method == "complete") ylb <- "1 - minimum absolute correlation within cluster"
-   if(x$cluster.numerics$method == "average") ylb <- "1 - average absolute correlation within cluster"
-   if(x$cluster.numerics$method == "single") ylb <- "1 - maximum absolute correlation within cluster"
-   plot(x$cluster.numerics, ylab = ylb) # , main=paste("1 - absolute correlations between variables")
-   if(!is.null(mincor)) abline(h=1-mincor, col=2)
-   }
+  if(is.null(x$cluster.numerics)) selection <- "factor"
+  if(is.null(x$cluster.factors)) selection <- "numeric"
+  if(selection == "both"){par(ask=TRUE)}
+  
+  if(selection == "both" | selection == "numeric"){
+  ylb <- "1 - absolute correlation within cluster"
+  if(x$cluster.numerics$method == "complete") ylb <- "1 - minimum absolute correlation within cluster"
+  if(x$cluster.numerics$method == "average") ylb <- "1 - average absolute correlation within cluster"
+  if(x$cluster.numerics$method == "single") ylb <- "1 - maximum absolute correlation within cluster"
+  plot(x$cluster.numerics, ylab = ylb) # , main=paste("1 - absolute correlations between variables")
+  if(!is.null(mincor)) abline(h=1-mincor, col=2)
+  }
 
-   if(selection == "both" | selection == "factor"){
-     ylb <- "1 - Cramer's V within cluster"
-     if(x$cluster.factors$method == "complete") ylb <- "1 - minimum Cramer's V within within cluster"
-     if(x$cluster.factors$method == "average") ylb <- "1 - average Cramer's V within within cluster"
-     if(x$cluster.factors$method == "single") ylb <- "1 - maximum Cramer's V within within cluster"
-     plot(x$cluster.factors, ylab = ylb) # , main=paste("1 - absolute correlations between variables")
-     if(!is.null(mincor)) abline(h=1-mincor, col=2)
-   }
-   par(ask=FALSE)
- }
+  if(selection == "both" | selection == "factor"){
+    ylb <- "1 - Cramer's V within cluster"
+    if(x$cluster.factors$method == "complete") ylb <- "1 - minimum Cramer's V within within cluster"
+    if(x$cluster.factors$method == "average") ylb <- "1 - average Cramer's V within within cluster"
+    if(x$cluster.factors$method == "single") ylb <- "1 - maximum Cramer's V within within cluster"
+    plot(x$cluster.factors, ylab = ylb) # , main=paste("1 - absolute correlations between variables")
+    if(!is.null(mincor)) abline(h=1-mincor, col=2)
+  }
+  par(ask=FALSE)
+}
 
 ### function that extract cluster IDs for variables from object fo class corclust 
 cvtree <- function(object, k = 2, mincor = NULL, ...){
@@ -279,8 +279,3 @@ xtractvars <- function(object, data, thres = 0.5){
 # sonderfall: nur 1 numeric / factor
 # in clv: k=1 oder mincor, so dass k=1! ~> abfangen
 # suggest ISLR
-
-
-
-
-

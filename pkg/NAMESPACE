@@ -2,13 +2,30 @@ import("MASS")
 importFrom("combinat", combn)
 importFrom("questionr", wtd.table)
 
+  importFrom("grDevices", "cm.colors", "col2rgb", "colorRamp", "gray",
+             "hsv", "rainbow", "rgb", "topo.colors")
+  importFrom("graphics", "abline", "axis", "barplot", "box", "contour",
+             "legend", "lines", "mosaicplot", "mtext", "par", "plot",
+             "plot.new", "plot.window", "points", "polygon", "text",
+             "title")
+  importFrom("stats", ".getXlevels", "aggregate", "aov", "as.formula",
+             "cor", "cov.wt", "delete.response", "density", "dist",
+             "dnorm", "hclust", "ks.test", "lm", "manova",
+             "model.extract", "model.frame", "model.matrix",
+             "model.response", "na.fail", "na.pass", "optim", "optimize",
+             "pbeta", "pf", "predict", "qbeta", "rnorm", "runif", "sd",
+             "terms", "var", "as.dist", "chisq.test", "cutree")
+  importFrom("utils", "data", "flush.console", "read.table",
+             "write.table")
+
 export(b.scal, betascale, calc.trans, centerlines, classscatter, cond.index, dkernel,
     drawparti, e.scal, EDAM, errormatrix, friedman.data, hmm.sop, loclda, NaiveBayes,
     partimat, plineplot, shardsplot, level_shardsplot,
     quadtrafo, quadlines, quadpoints, quadplot,
     rda, nm, sknn, stepclass, svmlight, meclight, TopoS,
     tritrafo, trilines, tripoints, trigrid, triframe, triplot, triperplines,
-    ucpm, benchB3, greedy.wilks, locpvs, pvs, corclust, cvtree, xtractvars, kmodes, woe)
+    ucpm, benchB3, greedy.wilks, locpvs, pvs, corclust, kmodes, woe)
+#cvtree, xtractvars	
 
 S3method(NaiveBayes, formula)
 S3method(NaiveBayes, default)

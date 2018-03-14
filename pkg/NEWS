@@ -186,6 +186,7 @@ Changelog:
 - woe: speedup and extension for weighted observation (imports wtd.table from questionr)   
 - kmodes: bugfix (wrong calculation for weights) speedup (additional fast = TRUE argument) [note: works on data frames instead of matrices (cf. ln. 3/83) and characters instead of integers (cf. ln. 42/43)] 
 - corclust: extension to categorical variables (using Cramer's V); returned object now of class corclust; plot.corclust() added; cvtree() function [cutree() for variables] added that also returns within vs. between cluster correlations; additional functions cvtree() and xtractvars()   
+- NaiveBayes update for new versions of R
 
 
 

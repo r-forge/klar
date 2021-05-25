@@ -1,11 +1,12 @@
 Package: klaR
-Version: 0.6-15
-Date: 2020-02-18
+Version: 1.7-0
+Date: 2021-05-25
 Title: Classification and Visualization
 Author: Christian Roever, Nils Raabe, Karsten Luebke, Uwe Ligges, Gero Szepannek, Marc Zentgraf, David Meyer
 Maintainer: Uwe Ligges <ligges@statistik.tu-dortmund.de>
 SystemRequirements: SVMlight
 Suggests: scatterplot3d (>= 0.3-22), som, mlbench, rpart, e1071
+Enhances: clustMixType, randomForest, ClustVarLV
 Depends: R (>= 2.10.0), MASS
 Imports: combinat, questionr, grDevices, stats, utils, graphics
 Description: Miscellaneous functions for classification and visualization,

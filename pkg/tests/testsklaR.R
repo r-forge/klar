@@ -3,7 +3,7 @@
 library("klaR")
 library("MASS")
 data(B3)
-postscript("testklaR.ps")
+postscript("testklaR.ps", encoding="ISOLatin1")
 
 ############
 # classifier
@@ -164,4 +164,4 @@ dev.off()
 
 psSave <- readLines("testklaR.ps.save")
 ps <- readLines("testklaR.ps")
-setdiff(ps, psSave)
+setdiff(trimws(ps), trimws(psSave))

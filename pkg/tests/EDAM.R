@@ -4,7 +4,7 @@ library(klaR)
 library(MASS)
 data(B3)
 data(countries)
-postscript("EDAM.ps")
+postscript("EDAM.ps", encoding="ISOLatin1")
 
 ######
 # EDAM
@@ -52,6 +52,6 @@ plot(countryEDAM, vertices = FALSE, label = TRUE, stck = FALSE)
 print(countryEDAM)
 dev.off()
 
-psSave <- readLines("EDAM.ps.save")
+psSave <- readLines("d:/uwe/R/library-devel/klaR/tests/EDAM.ps.save")
 ps <- readLines("EDAM.ps")
 setdiff(ps, psSave)

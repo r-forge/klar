@@ -64,7 +64,7 @@ ucpm(pbB3$member, B3$PHASEN)
 data(B3)
 gw_obj <- greedy.wilks(PHASEN ~ ., data = B3, niveau = 0.1)
 print(gw_obj, digits=4)
-print(lda(gw_obj$formula, data = B3))
+ldaresult <- lda(gw_obj$formula, data = B3)
 gw_obj2 <- greedy.wilks(B3[,-1], B3$PHASEN, niveau = 0.1)
 identical(all.equal(gw_obj$results, gw_obj2$results), TRUE)
 

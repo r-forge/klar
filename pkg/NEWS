@@ -208,6 +208,7 @@ Changelog:
 - new version to indoicate this is pretty stable (for many years already)
 - add packages mentioned in Rd links to "Enhances" to avoid Notes
 - update test results for changes in the R graphics device
+- omit printing some lda test results to avoid eigenvector sign related diffs
 
 
 

@@ -52,6 +52,6 @@ plot(countryEDAM, vertices = FALSE, label = TRUE, stck = FALSE)
 print(countryEDAM)
 dev.off()
 
-psSave <- readLines("d:/uwe/R/library-devel/klaR/tests/EDAM.ps.save")
+psSave <- readLines("EDAM.ps.save")
 ps <- readLines("EDAM.ps")
 setdiff(ps, psSave)

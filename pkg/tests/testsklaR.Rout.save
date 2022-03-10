@@ -21,7 +21,7 @@ Type 'q()' to quit R.
 Loading required package: MASS
 > library("MASS")
 > data(B3)
-> postscript("testklaR.ps")
+> postscript("testklaR.ps", encoding="ISOLatin1")
 > 
 > ############
 > # classifier

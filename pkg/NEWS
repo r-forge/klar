@@ -217,6 +217,7 @@ Changelog:
   of (almost) identical posteriors
 - predict.NaiveBayes now handles newdata correctly if factor structure does 
   not match the training datas'
+- corclust: initialization of kor matrix fixed
 
 
 

@@ -209,7 +209,10 @@ drawparti <- function(grouping, x, y, method = "lda", prec = 100,
         naiveBayes = predict(z, data.frame(cbind(x,y)), ...),
         stop("method not yet supported"))
 
-    colorw <- grouping != khead
+# was: colorw <- grouping != khead
+# avoid random results in case posteriors are almost identical
+    colorw <- colnames(temp)[apply(temp, 1, which.max)] != grouping
+    
     err <- round(mean(colorw), 3)
     color <- ifelse(colorw, col.wrong, col.correct)
     if(is.character(gs) || is.factor(gs)) gs <- substr(gs, 1, 1)

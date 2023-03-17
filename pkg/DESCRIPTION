@@ -1,6 +1,6 @@
 Package: klaR
-Version: 1.7-1
-Date: 2022-06-27
+Version: 1.7-2
+Date: 2023-03-17
 Title: Classification and Visualization
 Author: Christian Roever, Nils Raabe, Karsten Luebke, Uwe Ligges, Gero Szepannek, Marc Zentgraf, David Meyer
 Maintainer: Uwe Ligges <ligges@statistik.tu-dortmund.de>
@@ -17,4 +17,4 @@ Description: Miscellaneous functions for classification and visualization,
      corclust() variable clustering, variable extraction from different variable clustering models 
          and weight of evidence preprocessing.
 License: GPL-2 | GPL-3
-URL: https://www.statistik.tu-dortmund.de
+URL: https://statistik.tu-dortmund.de
